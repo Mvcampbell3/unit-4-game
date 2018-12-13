@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Bungee+Shade|Monoton|Orbitron" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/sf2.jpg" type="image/x-icon">
+    <title>Street Fighter II</title>
+</head>
+
+<body>
+    <div class="startScreen">
+        <img src="assets/images/loadingScreen.jpg" alt="">
+        <h3 class="pressStart active">Start</h3>
+    </div>
+    <div class="container">
+        <h2 class="areaName directions">Select Your Fighter</h2>
+        <div class="bottomContainer">
+            <div class="startArea">
+                <div class="goodArea">
+
+                </div>
+                <div class="boxArea playerPick">
+                    <div class="box start" id="ken">
+                        <h3 id="kenHP-place" class="hp"></h3>
+                        <h3 class="fighterName">Ken</h3>
+                    </div>
+
+                    <div class="box start" id="ryu">
+                        <h3 id="ryuHP-place" class="hp"></h3>
+
+                        <h3 class="fighterName">Ryu</h3>
+                    </div>
+                    <div class="box start" id="chunLi">
+                        <h3 id="chunLiHP-place" class="hp"></h3>
+
+                        <h3 class="fighterName">Chun-Li</h3>
+                    </div>
+                    <div class="box start" id="mBison">
+                        <h3 id="mBisonHP-place" class="hp"></h3>
+
+                        <h3 class="fighterName">M. Bison</h3>
+                    </div>
+                </div>
+                <div class="grave">
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="fightScreen">
+        <div class="flexInside">
+            <div class="leftStats statBack">
+                <h2 class="areaName">Player Stats:</h2>
+                <div class="statArea">
+                    <h3 class="stat goodHp">Health Points:
+                        <span class="goodHP-place place">0</span>
+                    </h3>
+                    <div class="goodBar bar"></div>
+                    <h3 class="stat goodStr">Attack Strength:
+                        <span class="goodStr-place place">0</span>
+                    </h3>
+                </div>
+            </div>
+            <div class="rightStats statBack">
+                <h2 class="areaName">Enemy Stats:</h2>
+                <div class="statArea">
+                    <h3 class="stat badHP">Health Points:
+                        <span class="badHP-place place">0</span>
+                    </h3>
+                    <div class="badBar bar"></div>
+                    <h3 class="stat badStr">Attack Strength:
+                        <span class="badStr-place place">0</span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="flexInside">
+            <div class="goodFighter">
+
+            </div>
+            <div id="actions">
+                <div id="attackArea">
+                    <div class="btn disabled" id="attack">Attack</div>
+                </div>
+                <div id="runArea">
+                    <div class="btn disabled" id="run">Run Away</div>
+                </div>
+            </div>
+            <div class="badFighter">
+
+            </div>
+        </div>
+    </div>
+    <div class="endScreen">
+        <div class="wrapper">
+            <img src="assets/images/mBison.jpg" alt="" id="endGamePic">
+            <h3 class="pressStartEnd">Restart</h3>
+        </div>
+    </div>
+
+    <!-- Pre-load sound files -->
+
+    <audio id="playerSelectAudio" src="assets/sounds/playerSelect.mp3" preload="auto"></audio>
+    <audio id="congratsAudio" src="assets/sounds/congratulations.mp3" preload="auto"></audio>
+    <audio id="continueAudio" src="assets/sounds/continue.mp3" preload="auto"></audio>
+    <audio id="fightAudio" src="assets/sounds/fight.mp3" preload="auto"></audio>
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="assets/js/rework.js"></script>
+</body>
+
+</html>
